@@ -28,9 +28,6 @@ public class App extends SpringBootServletInitializer{
 	}
 	
 	
-	@Bean
-	public ServletRegistrationBean servletRegistrationBean() {
-		return new ServletRegistrationBean(new WSSpringServlet(), "/hello");
-	}
+
 
 }

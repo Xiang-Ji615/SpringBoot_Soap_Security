@@ -1,5 +1,7 @@
 package main.java.spring.boot.soap.security.ws;
 
+import java.io.IOException;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -8,6 +10,6 @@ import javax.jws.WebService;
 public interface IHelloWorldService {
 	
 	@WebMethod
-	public String helloWorld(@WebParam String name);
+	public String helloWorld(@WebParam String name) throws IOException;
 
 }
